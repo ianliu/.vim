@@ -19,6 +19,7 @@ set hlsearch                " highlight the last searched term
 set virtualedit=all         " let us walk in limbo
 set showcmd                 " show number of lines selected
 set incsearch               " incremental search
+set t_Co=256                " terminal colors
 syntax on                   " syntax highlighting
 filetype plugin indent on   " use the file type plugins
 au InsertEnter * :let @/="" " Disable highlighted search on insert mode
