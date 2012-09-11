@@ -57,6 +57,9 @@ au BufNewFile,BufRead *.vimprj set syntax=vim
 " MacVim Settings
 
 if has("gui_macvim")
+  " Set default GUI font
+  set guifont=Menlo:h14
+
   let g:AutoPairsShortcutToggle     = 'π' " <m-p>
   let g:AutoPairsShortcutFastWrap   = '∑' " <m-w>
   let g:AutoPairsShortcutJump       = '∆' " <m-j>
@@ -64,9 +67,6 @@ if has("gui_macvim")
 endif
 
 if has('gui_running')
-  " Set default GUI font
-  set guifont=Consolas:h12
-
   " Remove scroll bars
   set guioptions-=L
   set guioptions-=R
