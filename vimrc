@@ -21,6 +21,7 @@ set showcmd                 " show number of lines selected
 set incsearch               " incremental search
 set t_Co=256                " terminal colors
 set encoding=utf8           " uset UTF-8 by default
+set bs=indent,eol,start     " better backspace in insert mode
 syntax on                   " syntax highlighting
 filetype plugin indent on   " use the file type plugins
 au InsertEnter * :let @/="" " Disable highlighted search on insert mode
