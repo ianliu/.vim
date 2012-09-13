@@ -4,10 +4,11 @@ call pathogen#infect()
 call pathogen#helptags()
 
 " General Settings
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+"set expandtab
+"set tabstop=4
+"set shiftwidth=4
+"set softtabstop=4
+set laststatus=2            " always show the status line
 set nocompatible            " We're running Vim, not Vi!
 set noswapfile              " No swap files
 set visualbell t_vb=        " No visual bell
@@ -16,7 +17,7 @@ set history=100             " keep 100 lines of history
 set ruler                   " show the cursor position
 set hidden                  " hide buffer without notice
 set hlsearch                " highlight the last searched term
-set virtualedit=all         " let us walk in limbo
+"set virtualedit=all         " let us walk in limbo
 set showcmd                 " show number of lines selected
 set incsearch               " incremental search
 set t_Co=256                " terminal colors
