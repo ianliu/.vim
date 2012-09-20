@@ -36,6 +36,9 @@ nnoremap ; :
 vnoremap ç :
 vnoremap ; :
 
+let mapleader=","
+nmap <leader>e ;e <C-R>=expand('%:p:h')<cr>/
+
 " When editing a file, always jump to the last cursor position
 au BufReadPost *
 \ if ! exists("g:leave_my_cursor_position_alone")   |
