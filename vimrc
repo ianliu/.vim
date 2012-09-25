@@ -60,6 +60,9 @@ au BufReadPost *
 
 " File Types
 
+" Scons
+au BufNewFile,BufRead SConstruct set filetype=scons
+
 " C++
 au FileType c,cpp,objc,objcpp set syntax=cpp11 | call CSyntaxAfter()
 au BufNewFile,BufRead *
