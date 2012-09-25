@@ -37,6 +37,9 @@ nnoremap ; :
 vnoremap ç :
 vnoremap ; :
 
+nnoremap <F3> :cp<CR>
+nnoremap <F4> :cn<CR>
+
 let mapleader=","
 nmap <leader>e ;e <C-R>=expand('%:p:h')<cr>/
 
