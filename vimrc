@@ -41,6 +41,11 @@ nnoremap <F3> :cp<CR>
 nnoremap <F4> :cn<CR>
 
 nnoremap <C-G> :grep <C-R>=expand('<cword>')<CR>
+nnoremap <silent> <F12> :call UpdateCTags()<CR>
+
+fun! UpdateCTags()
+  !ctags `find . -name '*.[ch]'`
+endf
 
 let mapleader=","
 nmap <leader>e ;e <C-R>=expand('%:p:h')<cr>/
