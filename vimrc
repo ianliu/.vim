@@ -48,7 +48,7 @@ fun! UpdateCTags()
 endf
 
 let mapleader=","
-nmap <leader>e ;e <C-R>=expand('%:h')<cr>/
+nnoremap <leader>e :e <C-R>=expand('%:h')<cr>/
 
 " When editing a file, always jump to the last cursor position
 au BufReadPost *
