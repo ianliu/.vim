@@ -26,6 +26,7 @@ set bs=indent,eol,start     " better backspace in insert mode
 set mouse=a                 " enable mouse
 set grepprg=~/.vim/bin/ack\ --column " better grep!
 set autowrite               " save buffers before some events
+set makeprg=make\ -j        " use more processors when making
 syntax on                   " syntax highlighting
 filetype plugin indent on   " use the file type plugins
 au InsertEnter * :let @/="" " Disable highlighted search on insert mode
