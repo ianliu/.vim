@@ -42,7 +42,9 @@ nnoremap <F3> :cp<CR>
 nnoremap <F4> :cn<CR>
 
 nnoremap <C-G> :grep <C-R>=expand('<cword>')<CR>
-nnoremap <silent> <F12> :call UpdateCTags()<CR>
+nnoremap <silent> <S-F12> :call UpdateCTags()<CR>
+
+nnoremap <silent> <F12> :make -C <C-R>=expand('%:p')<CR>
 
 fun! UpdateCTags()
   !ctags `find . -name '*.[ch]'`
