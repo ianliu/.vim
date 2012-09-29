@@ -67,3 +67,6 @@
 [submodule "bundle/scons"]
 	path = bundle/scons
 	url = git://github.com/vim-scripts/scons.vim.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = git://github.com/Kris2k/matchit.git
