@@ -67,6 +67,9 @@ au BufReadPost *
 " Scons
 au BufNewFile,BufRead SConstruct set filetype=scons
 
+" Python
+au FileType python set ts=4 sw=4 et sta
+
 " C++
 au FileType c,cpp,objc,objcpp set syntax=cpp11 | call CSyntaxAfter()
 au BufNewFile,BufRead *
