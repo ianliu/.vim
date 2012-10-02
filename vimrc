@@ -70,8 +70,8 @@ au BufNewFile,BufRead SConstruct set filetype=scons
 " Python
 au FileType python set ts=4 sw=4 et sta
 
-" HTML
-au FileType html set ts=2 sw=2 et sta
+" HTML & XML
+au FileType html,xml set ts=2 sw=2 et sta
 
 " C++
 au FileType c,cpp,objc,objcpp set syntax=cpp11 | call CSyntaxAfter()
