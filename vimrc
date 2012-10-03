@@ -51,6 +51,9 @@ fun! UpdateCTags()
   !ctags `find . -name '*.[ch]'`
 endf
 
+" Smart tab completion
+au BufNewFile,BufRead * let g:SuperTabDefaultCompletionType="context"
+
 let mapleader=","
 nnoremap <leader>e :e <C-R>=expand('%:h')<cr>/
 
@@ -69,6 +72,7 @@ au BufNewFile,BufRead SConstruct set filetype=scons
 
 " Python
 au FileType python set ts=4 sw=4 et sta
+au FileType python set omnifunc=pythoncomplete#Complete
 
 " HTML & XML
 au FileType html,xml set ts=2 sw=2 et sta
