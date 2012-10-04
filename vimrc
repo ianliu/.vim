@@ -76,6 +76,7 @@ au FileType python set omnifunc=pythoncomplete#Complete
 
 " HTML & XML
 au FileType html,xml set ts=2 sw=2 et sta
+au FileType html,xml syn spell toplevel
 
 " C++
 au FileType c,cpp,objc,objcpp set syntax=cpp11 | call CSyntaxAfter()
