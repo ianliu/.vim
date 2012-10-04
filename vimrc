@@ -68,7 +68,7 @@ au BufReadPost *
 " File Types
 
 " Scons
-au BufNewFile,BufRead SConstruct set filetype=scons
+au BufNewFile,BufRead SConstruct* set filetype=scons
 
 " Python
 au FileType python set ts=4 sw=4 et sta
