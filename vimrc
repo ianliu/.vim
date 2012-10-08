@@ -68,11 +68,12 @@ au BufReadPost *
 " File Types
 
 " Scons
-au BufNewFile,BufRead SConstruct* set filetype=scons
+au BufNewFile,BufRead SConstruct* set filetype=python
 
 " Python
 au FileType python set ts=4 sw=4 et sta
 au FileType python set omnifunc=pythoncomplete#Complete
+au FileType python set makeprg=pep8\ --repeat\ %
 
 " HTML & XML
 au FileType html,xml set ts=2 sw=2 et sta
