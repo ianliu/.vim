@@ -75,6 +75,9 @@ au FileType python set ts=4 sw=4 et sta
 au FileType python set omnifunc=pythoncomplete#Complete
 au FileType python set makeprg=pep8\ --repeat\ %
 
+" VIM
+au FileType vim set ts=2 sw=2 et sta
+
 " HTML & XML
 au FileType html,xml set ts=2 sw=2 et sta
 au FileType html,xml syn spell toplevel
