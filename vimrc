@@ -29,8 +29,8 @@ set autowrite               " save buffers before some events
 set makeprg=make\ -j        " use more processors when making
 syntax on                   " syntax highlighting
 filetype plugin indent on   " use the file type plugins
-au InsertEnter * :let @/="" " Disable highlighted search on insert mode
-au InsertLeave * :let @/="" " Enable it back
+au InsertEnter * set nohls " Disable highlighted search on insert mode
+au InsertLeave * set hls " Enable it back
 
 nnoremap ç :
 nnoremap Ç ;
@@ -52,7 +52,7 @@ fun! UpdateCTags()
 endf
 
 " Smart tab completion
-au BufNewFile,BufRead * let g:SuperTabDefaultCompletionType="context"
+let g:SuperTabDefaultCompletionType="context"
 
 let mapleader=","
 nnoremap <leader>e :e <C-R>=expand('%:h')<cr>/
@@ -128,7 +128,7 @@ let g:clang_complete_copen=1
 let g:clang_complete_macros=1
 let g:clang_complete_patterns=0
 " Avoids lame path cache generation and other unknown sources for includes 
-let g:clang_auto_user_options=''
+let g:clang_auto_user_options=".clang_complete"
 let g:clang_memory_percent=70
 
 set conceallevel=2
@@ -145,8 +145,8 @@ set completeopt=menu,menuone
 " Limit popup menu height
 set pumheight=20
 
-" SuperTab completion fall-back 
-let g:SuperTabDefaultCompletionType='<c-x><c-u><c-p>'
+"" SuperTab completion fall-back
+"let g:SuperTabDefaultCompletionType='<c-x><c-u><c-p>'
 
 " SuperTab completion fall-back for context aware completion
 " (incompatible with g:clang_auto_select=0, using the above)
