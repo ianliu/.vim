@@ -3,9 +3,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-syntax on
-filetype plugin indent on
-
 "{{{1 Global events
 au InsertEnter * set nohls  " Disable highlighted search on insert mode
 au InsertLeave * set hls    " Enable it back
@@ -40,15 +37,15 @@ set autowrite               " save buffers before some events
 set makeprg=make\ -j        " use more processors when making
 set conceallevel=2          " hide conceals
 set concealcursor=vin       " where should conceal work
-set completeopt=menu,menuone " better completion!
+set foldmethod=marker       " fold!
 set pastetoggle=<F2>
 let mapleader=","
 
 " Default *.h files to "c" type
 let g:c_syntax_for_h = 1
 
-" Smart tab completion
-let g:SuperTabDefaultCompletionType="context"
+syntax on
+filetype plugin indent on
 "}}}1
 
 "{{{1 Tag update methods
@@ -108,15 +105,27 @@ if has('gui_running')
 endif
 "}}}1
 
+"{{{1  SuperTab settings
+set completeopt=menu,longest
+let g:SuperTabDefaultCompletionType="<c-x><c-u>"
+let g:SuperTabLongestHighlight=1
+let g:SuperTabLongestEnhanced=1
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
+imap <C-@> <C-Space>
+imap <C-S-@> <C-S-Space>
+"}}}1
+
 "{{{1 Clang Complete Settings
-" g:clang_user_options set at vimprj section
+let g:clang_auto_select=1
 let g:clang_use_library=1
-let g:clang_complete_copen=1
 let g:clang_complete_macros=1
-let g:clang_memory_percent=70
 let g:clang_snippets=1
-let g:clang_conceal_snippets=1
-let g:clang_snippets_engine='ultisnips'
+" let g:clang_snippets_engine='ultisnips'
+" let g:clang_trailing_placeholder=1
+" let g:clang_complete_copen=1
+" let g:clang_memory_percent=70
+" let g:clang_conceal_snippets=1
 "}}}1
 
 "{{{1 Color Scheme settings
@@ -147,7 +156,8 @@ nnoremap <F4> :cn<CR>
 nnoremap <C-G> :grep <C-R>=expand('<cword>')<CR>
 nnoremap <S-F10> :call UpdateCTags()<CR>
 
-nnoremap <F10> :make -C <C-R>=expand('%:h')<CR>
+nnoremap <F7> :make CC="~/.vim/bundle/clang_complete/bin/cc_args.py gcc"<CR>
+nnoremap <F10> :make -C <C-R>=expand('%:h')<CR><CR>
 
 " Toggle Shell Pasting
 nnoremap <F2> :set invpaste paste?<cr>
