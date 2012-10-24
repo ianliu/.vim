@@ -165,24 +165,9 @@ nnoremap <F2> :set invpaste paste?<cr>
 noremap  <silent> <F6> :call g:ClangUpdateQuickFix()<cr>
 noremap  <silent> <F9> :SCCompileRun<cr>
 
-" bufkill bd's: really do not mess with NERDTree buffer
 nnoremap <silent> <backspace> :BD<cr>
 nnoremap <silent> <s-backspace> :BD!<cr>
-
-" Map NERDTreeToggle to convenient key
-nnoremap <silent> <c-n> :NERDTreeToggle<cr>
 "}}}1
-
-"{{{1 NERDTree settings
-" Prevent :bd inside NERDTree buffer
-au FileType nerdtree cnoreabbrev <buffer> bd <nop>
-au FileType nerdtree cnoreabbrev <buffer> BD <nop>
-let NERDTreeChDirMode=2
-let NERDTreeIgnore=['\env','\.vim$', '\~$', '\.pyc$', '\.swp$', '\.egg-info$', '\.DS_Store$', '^dist$', '^build$']
-let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\~$']
-let NERDTreeShowBookmarks=1
-let NERDTreeHightlightCursorline=1
-" }}}1
 
 "{{{1 vimprj configuration
 call vimprj#init()
