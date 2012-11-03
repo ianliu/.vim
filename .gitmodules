@@ -4,9 +4,6 @@
 [submodule "bundle/Zenburn"]
 	path = bundle/Zenburn
 	url = git://github.com/jnurmine/Zenburn.git
-[submodule "bundle/auto-pairs"]
-	path = bundle/auto-pairs
-	url = git://github.com/jiangmiao/auto-pairs.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
