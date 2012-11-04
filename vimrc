@@ -75,6 +75,9 @@ if !exists("autocommands_loaded")
 
   " vimprj
   au BufNewFile,BufRead *.vimprj set syntax=vim
+
+  " View man pages inside vim
+  runtime ftplugin/man.vim
 endif
 "}}}1
 
@@ -167,6 +170,8 @@ noremap  <silent> <F9> :SCCompileRun<cr>
 
 nnoremap <silent> <backspace> :BD<cr>
 nnoremap <silent> <s-backspace> :BD!<cr>
+
+nnoremap <S-K> :Man 2 <C-R>=expand('<cword>')<CR><CR>
 "}}}1
 
 "{{{1 vimprj configuration
