@@ -132,15 +132,8 @@ let g:clang_snippets=1
 "}}}1
 
 "{{{1 Color Scheme settings
-let g:zenburn_old_Visual=1
-let g:zenburn_high_Contrast=1
-let g:zenburn_alternate_Visual=1
-
-if has('gui_running')
-    colors vilight
-else
-    colors zenburn
-endif
+colors default
+set bg=dark
 "}}}1
 
 "{{{1 Key mappings

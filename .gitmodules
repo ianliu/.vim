@@ -1,9 +1,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
-[submodule "bundle/Zenburn"]
-	path = bundle/Zenburn
-	url = git://github.com/jnurmine/Zenburn.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
@@ -34,9 +31,6 @@
 [submodule "bundle/cSyntaxAfter"]
 	path = bundle/cSyntaxAfter
 	url = git@github.com:oblitum/cSyntaxAfter.git
-[submodule "bundle/colorschemes"]
-	path = bundle/colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
