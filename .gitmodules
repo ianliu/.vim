@@ -4,9 +4,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
-[submodule "bundle/cpp11"]
-	path = bundle/cpp11
-	url = git://github.com/vim-scripts/Cpp11-Syntax-Support.git
 [submodule "bundle/SingleCompile"]
 	path = bundle/SingleCompile
 	url = git://github.com/xuhdev/SingleCompile.git
@@ -28,9 +25,6 @@
 [submodule "bundle/bufkill"]
 	path = bundle/bufkill
 	url = git@github.com:oblitum/bufkill.git
-[submodule "bundle/cSyntaxAfter"]
-	path = bundle/cSyntaxAfter
-	url = git@github.com:oblitum/cSyntaxAfter.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
