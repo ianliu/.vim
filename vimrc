@@ -16,6 +16,11 @@ au BufReadPost *
 \ endif
 "}}}1
 
+"{{{1 Commands
+command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
+      \ | diffthis | wincmd p | diffthis
+"}}}1
+
 "{{{1 General Settings
 set nocompatible            " We're running Vim, not Vi!
 set laststatus=2            " always show the status line
