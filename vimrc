@@ -164,7 +164,6 @@ nnoremap <F10> :make -C <C-R>=expand('%:h')<CR><CR>
 nnoremap <F2> :set invpaste paste?<cr>
 
 noremap  <silent> <F6> :call g:ClangUpdateQuickFix()<cr>
-noremap  <silent> <F9> :SCCompileRun<cr>
 
 nnoremap <silent> <backspace> :BD<cr>
 nnoremap <silent> <s-backspace> :BD!<cr>
