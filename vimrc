@@ -39,7 +39,7 @@ set bs=indent,eol,start     " better backspace in insert mode
 set mouse=a                 " enable mouse
 set grepprg=~/.vim/bin/ack\ --column " better grep!
 set autowrite               " save buffers before some events
-set makeprg=make\ -j        " use more processors when making
+set makeprg=make\ -wj       " use more processors when making
 set conceallevel=2          " hide conceals
 set concealcursor=vin       " where should conceal work
 set foldmethod=marker       " fold!
