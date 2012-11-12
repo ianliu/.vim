@@ -155,10 +155,10 @@ nnoremap <F3> :cp<CR>
 nnoremap <F4> :cn<CR>
 
 nnoremap <C-G> :grep <C-R>=expand('<cword>')<CR>
-nnoremap <S-F10> :call UpdateCTags()<CR>
+nnoremap <S-F9> :call UpdateCTags()<CR>
 
 nnoremap <F7> :make CC="~/.vim/bundle/clang_complete/bin/cc_args.py gcc"<CR>
-nnoremap <F10> :make -C <C-R>=expand('%:h')<CR><CR>
+nnoremap <F9> :make -C <C-R>=expand('%:h')<CR><CR>
 
 " Toggle Shell Pasting
 nnoremap <F2> :set invpaste paste?<cr>
