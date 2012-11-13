@@ -24,7 +24,6 @@ command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
 "{{{1 General Settings
 set nocompatible            " We're running Vim, not Vi!
 set laststatus=2            " always show the status line
-set noswapfile              " No swap files
 set visualbell t_vb=        " No visual bell
 set ai                      " auto indenting
 set history=100             " keep 100 lines of history
