@@ -4,9 +4,6 @@ call pathogen#infect()
 call pathogen#helptags()
 
 "{{{1 Global events
-au InsertEnter * set nohls  " Disable highlighted search on insert mode
-au InsertLeave * set hls    " Enable it back
-
 " Jump to the last cursor position
 au BufReadPost *
 \ if ! exists("g:leave_my_cursor_position_alone")   |
@@ -141,12 +138,10 @@ set bg=dark
 "}}}1
 
 "{{{1 Key mappings
-nnoremap ç :
-nnoremap Ç ;
-nnoremap : ;
-nnoremap ; :
-vnoremap ç :
-vnoremap ; :
+nnoremap Ç :
+nnoremap ç ;
+vnoremap Ç :
+vnoremap ç ;
 
 nnoremap <leader>e :e <C-R>=expand('%:h')<cr>/
 
