@@ -82,6 +82,13 @@ if !exists("autocommands_loaded")
 endif
 "}}}1
 
+"{{{1 Devhelp Settings
+function! DevhelpUpdate()
+  call system('devhelp -a '.shellescape(expand('<cword>')).' &')
+endfunction
+au FileType c nnoremap <C-K> :call DevhelpUpdate()<CR>
+"}}}1
+
 "{{{1 MacVim & Gui Settings
 if has("gui_macvim")
   " Set default GUI font
