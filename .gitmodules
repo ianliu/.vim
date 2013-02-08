@@ -52,3 +52,6 @@
 [submodule "bundle/rope-vim"]
 	path = bundle/rope-vim
 	url = git://github.com/sontek/rope-vim.git
+[submodule "bundle/textobj-word-column"]
+	path = bundle/textobj-word-column
+	url = git://github.com/coderifous/textobj-word-column.vim.git
