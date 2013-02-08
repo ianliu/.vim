@@ -6,7 +6,7 @@
 	url = git://github.com/hallison/vim-markdown.git
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
-	url = git@github.com:Rip-Rip/clang_complete.git
+	url = git://github.comm/Rip-Rip/clang_complete.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
@@ -15,13 +15,13 @@
 	url = git://github.com/tpope/vim-pathogen.git
 [submodule "bundle/vimprj"]
 	path = bundle/vimprj
-	url = git@github.com:oblitum/vimprj.git
+	url = git://github.comm/oblitum/vimprj.git
 [submodule "bundle/dfrank_util"]
 	path = bundle/dfrank_util
-	url = git@github.com:oblitum/dfrank_util.git
+	url = git://github.comm/oblitum/dfrank_util.git
 [submodule "bundle/bufkill"]
 	path = bundle/bufkill
-	url = git@github.com:oblitum/bufkill.git
+	url = git://github.comm/oblitum/bufkill.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
