@@ -79,6 +79,10 @@ if !exists("autocommands_loaded")
 
   " View man pages inside vim
   runtime ftplugin/man.vim
+
+  " Java
+  au FileType java setlocal ts=4 sw=4 et sta
+  au FileType java setlocal omnifunc=javacomplete#Complete
 endif
 "}}}1
 
