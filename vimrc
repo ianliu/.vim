@@ -116,17 +116,6 @@ if has('gui_running')
 endif
 "}}}1
 
-"{{{1  SuperTab settings
-set completeopt=menu,longest
-let g:SuperTabDefaultCompletionType="<c-x><c-u>"
-let g:SuperTabLongestHighlight=1
-let g:SuperTabLongestEnhanced=1
-let g:SuperTabMappingForward = '<c-space>'
-let g:SuperTabMappingBackward = '<s-c-space>'
-imap <C-@> <C-Space>
-imap <C-S-@> <C-S-Space>
-"}}}1
-
 "{{{1 Clang Complete Settings
 let g:clang_auto_select=1
 let g:clang_use_library=1
@@ -141,7 +130,11 @@ let g:clang_snippets=1
 
 "{{{1 Color Scheme settings
 colors default
-set bg=dark
+if has("gui_running")
+  set bg=light
+else
+  set bg=dark
+endif
 "}}}1
 
 "{{{1 Key mappings
@@ -165,9 +158,6 @@ nnoremap <F9> :make -C <C-R>=expand('%:h')<CR><CR>
 nnoremap <F2> :set invpaste paste?<cr>
 
 noremap  <silent> <F6> :call g:ClangUpdateQuickFix()<cr>
-
-nnoremap <silent> <backspace> :BD<cr>
-nnoremap <silent> <s-backspace> :BD!<cr>
 
 nnoremap <S-K> :Man 2 <C-R>=expand('<cword>')<CR><CR>
 "}}}1
