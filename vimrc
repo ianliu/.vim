@@ -60,22 +60,22 @@ if !exists("autocommands_loaded")
   let autocommands_loaded = 1
 
   " Scons
-  au BufNewFile,BufRead SConstruct* set filetype=python
+  au BufNewFile,BufRead SConstruct* setlocal filetype=python
 
   " Python
-  au FileType python set ts=4 sw=4 et sta
-  au FileType python set omnifunc=pythoncomplete#Complete
-  au FileType python set makeprg=pep8\ --repeat\ %
+  au FileType python setlocal ts=4 sw=4 et sta
+  au FileType python setlocal omnifunc=pythoncomplete#Complete
+  au FileType python setlocal makeprg=pep8\ --repeat\ %
 
   " VIM
-  au FileType vim set ts=2 sw=2 et sta
+  au FileType vim setlocal ts=2 sw=2 et sta
 
   " HTML & XML
-  au FileType html,xml set ts=2 sw=2 et sta
+  au FileType html,xml setlocal ts=2 sw=2 et sta
   au FileType html,xml syn spell toplevel
 
   " vimprj
-  au BufNewFile,BufRead *.vimprj set syntax=vim
+  au BufNewFile,BufRead *.vimprj setlocal syntax=vim
 
   " View man pages inside vim
   runtime ftplugin/man.vim
