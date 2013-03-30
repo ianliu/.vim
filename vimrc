@@ -132,6 +132,10 @@ let g:clang_snippets=1
 " let g:clang_conceal_snippets=1
 "}}}1
 
+"{{{1 UltiSnips Settings
+let g:UltiSnipsSnippetDirectories=['mysnips']
+"}}}1
+
 "{{{1 Color Scheme settings
 colors default
 if has("gui_running")
