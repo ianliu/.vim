@@ -45,6 +45,9 @@ let mapleader=","
 " Default *.h files to "c" type
 let g:c_syntax_for_h = 1
 
+" Default shell scripts to BASH
+let g:is_bash=1
+
 syntax on
 filetype plugin indent on
 "}}}1
@@ -83,6 +86,9 @@ if !exists("autocommands_loaded")
   " Java
   au FileType java setlocal ts=4 sw=4 et sta
   au FileType java setlocal omnifunc=javacomplete#Complete
+
+  " Shell
+  au FileType sh setlocal ts=2 sw=2 et sta
 endif
 "}}}1
 
