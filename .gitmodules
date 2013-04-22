@@ -52,3 +52,6 @@
 [submodule "bundle/go"]
 	path = bundle/go
 	url = git://github.com/fsouza/go.vim.git
+[submodule "bundle/vim-abolish"]
+	path = bundle/vim-abolish
+	url = git://github.com/tpope/vim-abolish.git
