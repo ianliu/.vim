@@ -69,6 +69,7 @@ if !exists("autocommands_loaded")
   au FileType python setlocal ts=4 sw=4 et sta
   au FileType python setlocal omnifunc=pythoncomplete#Complete
   au FileType python setlocal makeprg=pep8\ --repeat\ %
+  au FileType python nmap <F5> :!python %<CR>
 
   " VIM
   au FileType vim setlocal ts=2 sw=2 et sta
