@@ -96,6 +96,9 @@ if !exists("autocommands_loaded")
 
   " Shell
   au FileType sh setlocal ts=2 sw=2 et sta
+
+  " Go
+  au FileType go nmap <F5> :!go run %<CR>
 endif
 "}}}1
 
