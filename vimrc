@@ -1,4 +1,8 @@
 " Vim Pathogen
+let g:pathogen_disabled=[]
+if system("python -c 'import sys;print sys.version_info<(2,5)'") =~ "True"
+  let g:pathogen_disabled+=["pyflakes-pathogen", "rope-vim", "ultsnips"]
+endif
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
@@ -36,8 +40,10 @@ set mouse=a                 " enable mouse
 set grepprg=~/.vim/bin/ack\ --column " better grep!
 set autowrite               " save buffers before some events
 set makeprg=make\ -wj       " use more processors when making
-set conceallevel=2          " hide conceals
-set concealcursor=vin       " where should conceal work
+if has("conceal")
+  set conceallevel=2        " hide conceals
+  set concealcursor=vin     " where should conceal work
+endif
 set foldmethod=marker       " fold!
 set pastetoggle=<F2>
 let mapleader=","
