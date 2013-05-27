@@ -1,7 +1,7 @@
 " Vim Pathogen
 let g:pathogen_disabled=[]
 if system("python -c 'import sys;print sys.version_info<(2,5)'") =~ "True"
-  let g:pathogen_disabled+=["pyflakes-pathogen", "rope-vim", "ultsnips"]
+  let g:pathogen_disabled+=["pyflakes-pathogen", "rope-vim", "ultisnips"]
 endif
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
