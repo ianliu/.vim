@@ -136,6 +136,10 @@ if has('gui_running')
 
   " Disable toolbar
   set guioptions=-t
+
+  " Disable visual bell
+  set novb
+  set t_vb=
 endif
 "}}}1
 
