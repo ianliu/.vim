@@ -101,7 +101,7 @@ if !exists("autocommands_loaded")
   au FileType go nmap <F5> :!go run %<CR>
 
   " LaTeX
-  au BufNewFile,BufRead *.tex set ft=tex ts=2 sw=2 et sta tw=72
+  au BufNewFile,BufRead *.tex set ft=tex ts=2 sw=2 et sta tw=72 cole=0
 endif
 "}}}1
 
