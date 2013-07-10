@@ -12,10 +12,10 @@
 	url = git://github.com/tpope/vim-pathogen.git
 [submodule "bundle/vimprj"]
 	path = bundle/vimprj
-	url = git://github.com/oblitum/vimprj.git
+	url = git://github.com/vim-scripts/vimprj.git
 [submodule "bundle/dfrank_util"]
 	path = bundle/dfrank_util
-	url = git://github.com/oblitum/dfrank_util.git
+	url = git://github.com/vim-scripts/DfrankUtil.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
