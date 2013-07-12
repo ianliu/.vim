@@ -58,9 +58,13 @@ syntax on
 filetype plugin indent on
 "}}}1
 
-"{{{1 Tag update methods
+"{{{1 Methods
 fun! UpdateCTags()
   !ctags `find . -name '*.[ch]'`
+endf
+
+fun! CmakeHelp()
+  exe "!cmake --help-command " . expand("<cword>") . " | less"
 endf
 "}}}1
 
@@ -102,6 +106,9 @@ if !exists("autocommands_loaded")
 
   " LaTeX
   au BufNewFile,BufRead *.tex set ft=tex ts=2 sw=2 et sta tw=72 cole=0
+
+  " CMake
+  au FileType cmake nmap K :call CmakeHelp()<CR>
 endif
 "}}}1
 
