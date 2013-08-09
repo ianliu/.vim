@@ -33,7 +33,7 @@ set hidden                  " hide buffer without notice
 set hlsearch                " highlight the last searched term
 set showcmd                 " show number of lines selected
 set incsearch               " incremental search
-set t_Co=256                " terminal colors
+" set t_Co=256                " terminal colors
 set encoding=utf8           " uset UTF-8 by default
 set bs=indent,eol,start     " better backspace in insert mode
 set mouse=a                 " enable mouse
