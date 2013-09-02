@@ -77,7 +77,7 @@ if !exists("autocommands_loaded")
 
   " Python
   au FileType python setlocal ts=4 sw=4 et sta
-  au FileType python setlocal omnifunc=pythoncomplete#Complete
+  " au FileType python setlocal omnifunc=pythoncomplete#Complete
   au FileType python setlocal makeprg=pep8\ --repeat\ %
   au FileType python nmap <F5> :!python %<CR>
 
