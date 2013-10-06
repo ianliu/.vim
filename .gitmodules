@@ -61,3 +61,12 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git://github.com/bling/vim-airline
+[submodule "bundle/cmake.vim"]
+	path = bundle/cmake.vim
+	url = https://github.com/jalcine/cmake.vim.git
+[submodule "bundle/vim-bufferline"]
+	path = bundle/vim-bufferline
+	url = git@github.com:bling/vim-bufferline.git
